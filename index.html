@@ -16,7 +16,7 @@
 
     <h2>Plán dne</h2>
     <p>Jaký trénink je dnes naplánován, jaký typ.</p>
-        <table style="border: 1px solid black;">
+        <table border="1" style="border: 1px solid black;">
             <tr>
                 <th>Datum</th>
                 <th>Typ tréninku</th>
@@ -59,6 +59,11 @@
 
     <h2>Zapisování poznámek</h2>
     <p>Poznámky k tréninkům a dalším informacím.</p>
+    <form action="submit_notes.php" method="post">
+        <label for="notes">Zapište své poznámky:</label><br>
+        <input type="text" id="notes" name="notes"><br>
+        <button type="submit" value="Odeslat">Odeslat</button>
+    </form>
 
     <h4>FAQ</h4>
     <p>Nejčastější dotazy a odpovědi.</p>
